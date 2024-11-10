@@ -1,0 +1,38 @@
+<!--Write a program that prompts for three integers. The program prints the sum,
+ product and average of the numbers to the HTML document.
+-remember to convert strings to numbers when adding them together.
+............................Internal...............................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-3</title>
+</head>
+<body>
+<h1>Sum, Product and Average</h1>
+<script>
+    'use strict'
+    const num1 = parseInt(prompt('Enter the first integer'));
+    const num2 = parseInt(prompt('Enter the second integer'));
+    const num3 = parseInt(prompt('Enter the third integer'));
+    const sum = num1 + num2 + num3;
+    const product = num1 * num2 * num3;
+    const average = (num1 + num2 + num3) / 3;
+    alert(`Sum: ${sum}, Product: ${product}, Average: ${average}`);
+</script>
+</body>
+</html>
+
+.............................External..............................-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-3</title>
+</head>
+<body>
+<h1>Sum, Product and Average</h1>
+<script src="qn3.js"></script>
+</body>
+</html>

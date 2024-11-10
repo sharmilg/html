@@ -1,0 +1,53 @@
+<!--Write a program that asks the user for an integer and tells if the number is a prime number.
+Prime numbers are numbers that are only divisible by 1 and itself.
+For example, number 13 is a prime number as it can only be divided by 1 or 13 so that the result is an integer.
+On the other hand, number 21 for example is not a prime number as it can be also be divided by numbers 3 and 7.
+Print the result on the HTML document.
+......................Internal....................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-9</title>
+</head>
+<body>
+<h1>Prime Number Checker</h1>
+<p>Enter a number to check if it is a prime number:</p>
+<script>
+    'use strict';
+    let num = parseInt(prompt('Enter an integer: '));
+    if (num > 1) {
+        let isPrime = true;
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            alert(`${num} is a prime number.`);
+        } else {
+            alert(`${num} is not a prime number.`);
+        }
+    } else {
+        alert(`${num} is not a prime number.`);
+    }
+</script>
+</body>
+</html>
+
+..................External...................-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question-9</title>
+</head>
+<body>
+<h1>Prime Number Checker</h1>
+<p>Enter a number to check if it is a prime number:</p>
+<script src="qn9.js">
+</script>
+</body>
+</html>
